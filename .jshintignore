@@ -1,0 +1,10 @@
+app/scripts/bootstrap.js
+app/scripts/bootstrap.min.js
+app/scripts/jquery-1.10.2.js
+app/scripts/jquery-ui-1.10.4.custom.js
+app/scripts/jquery-ui-1.10.4.custom.min.js
+app/scripts/jquery.dform-1.1.0.min.js
+app/scripts/json2html.js
+app/scripts/jquery.json2html.js
+app/scripts/underscore.js
+app/scripts/bootstrap-slider.js
