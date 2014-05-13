@@ -3406,6 +3406,33 @@ var transformRadio =
     ]},
     {"tag":"label","class":"btn btn-primary ${group}","children":[
     	{"tag":"input","type":"radio","value":"${response4_value}","html":"${response4}"}
+    ]},
+    {"tag":"label","class":"btn btn-primary ${group}","children":[
+        {"tag":"input","type":"radio","value":"${response5_value}","html":"${response5}"}
+    ]},
+    {"tag":"label","class":"btn btn-primary ${group}","children":[
+        {"tag":"input","type":"radio","value":"${response6_value}","html":"${response6}"}
+    ]},
+    {"tag":"label","class":"btn btn-primary ${group}","children":[
+        {"tag":"input","type":"radio","value":"${response7_value}","html":"${response7}"}
+    ]},
+    {"tag":"label","class":"btn btn-primary ${group}","children":[
+        {"tag":"input","type":"radio","value":"${response8_value}","html":"${response8}"}
+    ]},
+    {"tag":"label","class":"btn btn-primary ${group}","children":[
+        {"tag":"input","type":"radio","value":"${response9_value}","html":"${response9}"}
+    ]},
+    {"tag":"label","class":"btn btn-primary ${group}","children":[
+        {"tag":"input","type":"radio","value":"${response10_value}","html":"${response10}"}
+    ]},
+    {"tag":"label","class":"btn btn-primary ${group}","children":[
+        {"tag":"input","type":"radio","value":"${response11_value}","html":"${response11}"}
+    ]},
+    {"tag":"label","class":"btn btn-primary ${group}","children":[
+        {"tag":"input","type":"radio","value":"${response12_value}","html":"${response12}"}
+    ]},
+    {"tag":"label","class":"btn btn-primary ${group}","children":[
+        {"tag":"input","type":"radio","value":"${response13_value}","html":"${response13}"}
     ]}
 ]};
 

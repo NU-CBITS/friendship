@@ -49,13 +49,13 @@
                     <!-- Button trigger modal -->
                     <ul class="pager">
                         <li><a href="./baseline4.html">Previous</a></li>
-                      <li><a href="./index.html">Next</a></li>
+                      <li><button class="btn btn-primary" data-toggle="modal" data-target="#finish">Submit</button></li>
                     </ul>
                 </div>
             </div>
 
             <!-- Modal -->
-            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal fade" id="finish" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
               <div class="modal-dialog">
                 <div class="modal-content">
                   <div class="modal-header">
@@ -63,10 +63,13 @@
                     <h4 class="modal-title" id="myModalLabel">Thank you for completing the assessment</h4>
                   </div>
                   <div class="modal-body">
-                    Depending on how the assessment validates, you might not ever see this modal!
+                    <p>Zvino ratidza kunge tsvagurudzo yedu inogona kukubatsirai. Ndinoda kukupai nguva yekuti musangane nevamwe vandinoshanda navo muchikamu chinotevera chakuti mupinde muchirogwa. Zvichatora nguva ingangoita maminetsi makumi matatu muchikamu ichi.  Ndingakubatai ne nhamba dzipi dze nhare. </p>
+                    <input type="datetime-local" name="appointment">
+                    <p>Tinogona kukutumirai chiziviso parunhare kwasara maminetsi gumi nemashanu ekuti muuye kuzotiona. Saka ndedzipi nhamba dzamuda kuti ndikubatei nadzo? </p>
+                    <input type="tel" name="patienttel">
                   </div>
                   <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Okay</button>
+                    <input type="submit" class="btn btn-default" data-dismiss="modal"></input>
                   </div>
                 </div>
               </div>
