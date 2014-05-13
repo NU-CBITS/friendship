@@ -2203,6 +2203,7 @@ var questions = { screening: [
   {
     "group":"ssq",
     "type":"radio",
+    "name":"suicidevalid",
     "content":"Pane pandaimboita pfungwa dzekuda kuzviuraya",
     "response0":"Kwete",
     "response0_value":"0",
@@ -3393,10 +3394,10 @@ var questions = { screening: [
 var transformRadio =
 {"tag":"div","class":"btn-group","data-toggle":"buttons","html":"<p>${content}</p>","children":[
     {"tag":"label","class":"btn btn-primary ${group}","children":[
-    	{"tag":"input","type":"radio","value":"${response0_value}","html":"${response0}"}
+    	{"tag":"input","type":"radio","name":"${name}","value":"${response0_value}","html":"${response0}"}
     ]},
     {"tag":"label","class":"btn btn-primary ${group}","children":[
-    	{"tag":"input","type":"radio","value":"${response1_value}","html":"${response1}"}
+    	{"tag":"input","type":"radio","name":"${name}","value":"${response1_value}","html":"${response1}"}
     ]},
     {"tag":"label","class":"btn btn-primary ${group}","children":[
     	{"tag":"input","type":"radio","value":"${response2_value}","html":"${response2}"}
@@ -3434,7 +3435,7 @@ var transformRadio =
     {"tag":"label","class":"btn btn-primary ${group}","children":[
         {"tag":"input","type":"radio","value":"${response13_value}","html":"${response13}"}
     ]}
-]};
+]}; //some way to condense this code?
 
 var transformCheckbox =
 {"tag":"div","class":"btn-group","data-toggle":"buttons","html":"<p>${content}</p>","children":[

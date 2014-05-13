@@ -7,6 +7,7 @@ function calcscore(){
 
 $('#calc').click(function() {
     calcscore();
+    var suicidevalid = $('input:radio[name="suicidevalid"]:checked').val();
     console.log(ssqScore);
     if (ssqScore > 120) {
         $('#calc').attr('href','./overtwelve.html');
@@ -17,8 +18,11 @@ $('#calc').click(function() {
         console.log("<80");
     }
     else {
-        //if ($('input:radio[name="11"]').is(':checked')) {
-        $('#calc').attr('href','./baseline1.html');
-        console.log("8-11");
+        if (suicidevalid === "10") {
+            $('#calc').attr('href','./overtwelve.html');
+        }
+        else {
+            $('#calc').attr('href','./baseline1.html');
+        }
     }
 });
