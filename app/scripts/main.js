@@ -722,26 +722,6 @@ var questions = { screening: [
     "response1_value":"Hongu, vazukuru",
     "response2":"Hongu, vamwewo",
     "response2_value":"Hongu, vamwewo",
-    "response3":"",
-    "response3_value":"",
-    "response4":"",
-    "response4_value":"",
-    "response5":"",
-    "response5_value":"",
-    "response6":"",
-    "response6_value":"",
-    "response7":"",
-    "response7_value":"",
-    "response8":"",
-    "response8_value":"",
-    "response9":"",
-    "response9_value":"",
-    "response10":"",
-    "response10_value":"",
-    "response11":"",
-    "response11_value":"",
-    "response12":"",
-    "response12_value":""
   },
   {
     "group":"baseline_demographics",
@@ -3437,7 +3417,7 @@ var transformRadio =
     ]}
 ]}; //some way to condense this code?
 
-var transformCheckbox =
+/*var transformCheckbox =
 {"tag":"div","class":"btn-group","data-toggle":"buttons","html":"<p>${content}</p>","children":[
     {"tag":"label","class":"btn btn-primary","children":[
     	{"tag":"input","type":"checkbox","html":"${response0}"}
@@ -3454,8 +3434,29 @@ var transformCheckbox =
     {"tag":"label","class":"btn btn-primary","children":[
     	{"tag":"input","type":"checkbox","html":"${response4}"}
     ]}
+]};*/
+var transformCheckbox =
+{"tag":"div","class":"btn-group","data-toggle":"buttons","html":"<p>${content}</p>","children":[
+    {"tag":"label","class":"btn btn-info ${group}","children":[
+        {"tag":"input","type":"checkbox","html":"${response0}"}
+    ]},
+    {"tag":"label","class":"btn btn-info ${group}","children":[
+        {"tag":"input","type":"checkbox","html":"${response1}"}
+    ]},
+    {"tag":"label","class":"btn btn-info ${group}","children":[
+        {"tag":"input","type":"checkbox","html":"${response2}"}
+    ]},
+    {"tag":"label","class":"btn btn-info ${group}","children":[
+        {"tag":"input","type":"checkbox","html":"${response3}"}
+    ]},
+    {"tag":"label","class":"btn btn-info ${group}","children":[
+        {"tag":"input","type":"checkbox","html":"${response4}"}
+    ]}
 ]};
 
+for (var i=0; i < 12; i++) {
+    console.log("${response"+i+"}");
+};
 var transformText =
 {"tag":"div","class":"form-group","html":"${content}","children":[
 	{"tag":"input","type":"text","class":"form-control"}
@@ -3508,7 +3509,7 @@ $.each(questions, function(category, items) {
 $(document).ready(function() {
 	$('input[type=radio]').each(function() {
 		if ($(this).val() === "") {
-			$(this).parent().remove(); /* remove any additional radio buttons */
+			$(this).parent().remove(); /* remove any empty radio buttons */
 		}
 	});
 	$("#start").click(function() {

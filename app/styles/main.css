@@ -68,6 +68,19 @@ body {
     padding: 10px;
 }
 
+.btn.baseline_demographics, .btn.EQ_5D_5L, .btn.IES, .btn.PHQ9, .btn.WHODAS, .btn.GAD7  {
+    width: 100%;
+    border-radius: 0;
+}
+
+.btn-group .btn+.btn {
+    margin-left: 0;
+}
+
+.btn.ssq {
+    width: 50%;
+}
+
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
     .container {

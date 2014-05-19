@@ -9,7 +9,10 @@ $('#calc').click(function() {
     calcscore();
     var suicidevalid = $('input:radio[name="suicidevalid"]:checked').val();
     console.log(ssqScore);
-    if (ssqScore > 120) {
+    if (suicidevalid === "10") {
+        $('#calc').attr('href','./overtwelve.html');
+    }
+    else if (ssqScore > 120) {
         $('#calc').attr('href','./overtwelve.html');
         console.log(">120");
     }
